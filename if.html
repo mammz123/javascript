@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="age"> ENTER YOUR AGE</label>
+    <input type="number" placeholder="ENTER AGE" id="age">
+    <button  onclick="vote()" type="submit" >SUBMIT</button> 
+    <script>
+        function vote()
+        {
+            let a = document.getElementById("age").value;
+            
+
+            if(a>18)
+            {
+                alert("elegible for vote");
+            }
+            else
+            {
+                alert("not elegable for vote");
+            }
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
