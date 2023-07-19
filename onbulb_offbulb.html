@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img id="myImage" onclick="changeImage()" src="https://i.pinimg.com/originals/c9/66/cd/c966cddacf3d0d9d9fe5f107f0692852.jpg" >
+   <p>ON/OFF</p>
+   <script>
+    function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match("bulb-off")) {
+            image.src = "https://i.pinimg.com/originals/ff/7f/1a/ff7f1ac7b9805ea8c2f6193fe066b41f.jpg"
+        } else
+            {
+            image.src = "https://i.pinimg.com/originals/ff/7f/1a/ff7f1ac7b9805ea8c2f6193fe066b41f.jpg"
+        }
+        }
+    
+    
+   </script>
+</body>
+</html>
