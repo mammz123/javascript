@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" id="email" >
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <script>
+        function validateEmail(email)
+        {
+            const regex_pattern =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+            if (regex_pattern.test(email_id)){
+                console.log('${email_id} is valid');
+            }
+          else if{
+            console.log('${email_id} is not valid');
+          }
+        }
+        validateEmail('mammad@gmail.com');
+        validateEmail('hi.com');
+      </script>
+</body>
+</html>
